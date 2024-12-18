@@ -6,7 +6,7 @@ module.exports.config = {
     credits: "Nayan",
     description: "𝘿𝙤𝙣'𝙩 𝙨𝙖𝙮 𝙗𝙖𝙙𝙬𝙤𝙧𝙙𝙨 𝙥𝙡𝙚𝙖𝙨𝙚",
     category: "Utility",
-    usage: "add [word]",
+    usage: "add [word] | del [word]",
     cooldowns: 3,
     dependencies: {
         "fs-extra": "",
@@ -54,7 +54,7 @@ module.exports.handleEvent = async ({ api, event }) => {
         }
 
         return api.sendMessage({
-            body: `${name} violated the word ${event.body}?\nWhy are you cursing at the bot?\n\nWarning: ${warnings[event.senderID]}/3`,
+            body: `${name} violated the word 😡 ${event.body}?\nWhy are you using bad words😡😤?\n\nWarning: ${warnings[event.senderID]}/3`,
             mentions: [{
                 tag: name,
                 id: event.senderID
