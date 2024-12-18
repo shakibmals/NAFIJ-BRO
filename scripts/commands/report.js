@@ -6,7 +6,7 @@ module.exports.config = {
   description: "example",
   prefix: false,
   category: "example", 
-  usages: "example", 
+  usages: "report bot admin", 
   cooldowns: 5, 
   dependencies: {}
 };
