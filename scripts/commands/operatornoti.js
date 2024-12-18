@@ -4,7 +4,7 @@ const request = require('request');
 module.exports.config = {
     name: "operatornoti",
     version: "1.0.0",
-    permission: 3,
+    permission: 1,2,3
     credits: "NAYAN",
     description: "",
     prefix: true,
