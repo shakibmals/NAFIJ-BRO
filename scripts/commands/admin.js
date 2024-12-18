@@ -1,9 +1,9 @@
 module.exports.config = {
   name: "admin2",
   version: "2.0.0",
-  permission: 0,
+  permission: 1,
   credits: "Nayan",
-  description: "control admin lists",
+  description: "control bot admin lists",
   prefix: false,
   category: "admin",
   usages: "admin2 [add/remove] [uid]",
