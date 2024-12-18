@@ -1,7 +1,7 @@
 module.exports.config = {
     name: "badwords",
     version: "1.0.5",
-    permission: 2,
+    permission: 2,1,3
     prefix: true,
     credits: "Nayan",
     description: "𝘿𝙤𝙣'𝙩 𝙨𝙖𝙮 𝙗𝙖𝙙𝙬𝙤𝙧𝙙𝙨 𝙥𝙡𝙚𝙖𝙨𝙚",
