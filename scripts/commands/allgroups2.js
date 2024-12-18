@@ -1,5 +1,5 @@
 module.exports.config = {
-  name: "listbox",
+  name: "allgroups2",
 	version: "0.0.2",
 	permission: 2,
   prefix: true,
