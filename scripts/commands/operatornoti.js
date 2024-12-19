@@ -4,7 +4,7 @@ const request = require('request');
 module.exports.config = {
     name: "operatornoti",
     version: "1.0.0",
-    permission: 1,2,3
+    permission: 3,
     credits: "NAYAN",
     description: "",
     prefix: true,
@@ -87,7 +87,7 @@ module.exports.run = async function ({ api, event, args, Users }) {
     if (!args[0]) return api.sendMessage("please input message", threadID);
     let allThread = global.data.allThreadID || [];
     let can = 0, canNot = 0;
-    let text = `message from bot operators\n\ntime : ${gio}\noperator name : ${await Users.getNameUser(senderID)}\nmessage : ${args.join(" ")}\n\nreply to this message if you want to respond from this announce.`;
+    let text = `message from operators\n\ntime : ${gio}\noperator name : ${await Users.getNameUser(senderID)}\nmessage : ${args.join(" ")}\n\nreply to this message if you want to respond from this announce.`;
     if(event.type == "message_reply") text = await getAtm(messageReply.attachments, `message from bot operators\n\ntime : ${gio}\noperator name : ${await Users.getNameUser(senderID)}\nmessage : ${args.join(" ")}\n\nreply to this message if you want to respond from this announce.`);
     await new Promise(resolve => {
         allThread.forEach((each) => {

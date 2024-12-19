@@ -1,7 +1,7 @@
 
 module.exports.config = {
 
-	name: "searchimage",
+	name: "img",
 	version: "1.0.0",
 	permission: 0,
 	credits: "nayan",
