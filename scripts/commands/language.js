@@ -3,10 +3,10 @@ module.exports.config = {
 	version: "1.0.0",
 	permission: 2,
 	prefix: true,
-	credits: "Nayan",
+	credits: "NAFIJ_PRO",
 	description: "change the bot language",
 	category: "admin",
-	usages: "[vi] [en]",
+	usages: "[vi] [en] [bd]",
 	cooldowns: 5
 };
 
@@ -35,6 +35,13 @@ module.exports.run = async ({ api, event, args, getText }) => {
                 return api.sendMessage("syntax error, use : language vi/en", threadID, messageID);
             }   
             break; 
+
+		case "bangla":
+        case "bd":
+            {
+                return api.sendMessage(`Bangla set successful`, threadID, () => global.config.language = "bd"); 
+            }
+            break;
             
     }	
 }
