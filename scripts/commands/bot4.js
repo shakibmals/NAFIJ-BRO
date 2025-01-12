@@ -2,7 +2,7 @@ const fs = require("fs");
 
 module.exports = {
   config: {
-    name: "bby4",
+    name: "pro",
     version: "1.0.0",
     permission: 0,
     credits: "nayan",
