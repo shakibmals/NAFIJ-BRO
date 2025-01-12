@@ -5,7 +5,7 @@ module.exports.config = {
   version: "1.1.0",
   permission: 0,
   prefix: '/',
-  credits: "Nayan",
+  credits: "NAFIJ PRO",
   description: "Teach or delete bot responses dynamically, single reply per ask",
   category: "admin",
   usages: "/teach hi = hello | /teach delete hi",
