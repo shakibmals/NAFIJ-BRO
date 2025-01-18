@@ -17,7 +17,7 @@ module.exports = {
 
   handleReply: async function ({ api, event, handleReply }) {
     try {
-      const response = await axios.get(`http://37.114.46.140:6236/sim?ask=${encodeURIComponent(event.body)}`);
+      const response = await axios.get(`http://87.106.36.114:6055/sim?ask=${encodeURIComponent(event.body)}`);
       console.log(response.data);
       const result = response.data.respond;
 
@@ -68,7 +68,7 @@ module.exports = {
         }, events.messageID);
     }
 
-      const response = await axios.get(`http://23.27.249.47:7197/sim?ask=${encodeURIComponent(msg)}`);
+      const response = await axios.get(`http://87.106.36.114:6055/sim?ask=${encodeURIComponent(msg)}`);
       console.log(response.data);
       const replyMessage = response.data.respond;
 
