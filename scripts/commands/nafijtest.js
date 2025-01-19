@@ -16,18 +16,19 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
   var { threadID, messageID } = event;
 
   if (
-    event.body.startsWith("bot") || 
-    event.body.startsWith("nafij") || 
-    event.body.startsWith("@Nafijur Rahaman")
+    event.body.startsWith("SAIMA") || 
+    event.body.startsWith("সায়মা") || 
+    event.body.startsWith("Saima") || 
+    event.body.startsWith("saima") || 
+    event.body.startsWith("@Sayma Ayat")
   ) {
     var msg = {
       body: "MY CREATOR IS NAFIJ BRO",
-      attachment: fs.createReadStream(__dirname + `/NAFIJ/nafij.jpg`)
+      attachment: fs.createReadStream(__dirname + `/NAFIJ/s.jpg`)
     };
     api.sendMessage(msg, threadID, messageID);
-    api.setMessageReaction("🤡", messageID, (err) => {}, true);
+    api.setMessageReaction("🥰", messageID, (err) => {}, true);
   }
-
   if (
     event.body.startsWith("Test") || 
     event.body.startsWith("test") || 
